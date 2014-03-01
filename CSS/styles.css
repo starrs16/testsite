@@ -1,0 +1,481 @@
+/* RESET */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+	height: auto;
+	width: auto;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* GLOBAL STYLES */
+
+body {
+	background-image: url(../Images/BKG-MAIN.gif);
+	background-repeat: repeat;
+	background-position: center;
+	font-family: 'Varela Round', sans-serif;
+	font-size:15px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.8;
+	text-decoration: none;
+	color: #FFF;
+}
+
+#header_wrap {
+	background: url(../Images/BKG-HDR.png); 
+	background-position: initial initial;
+	background-repeat: initial initial;
+	height: 84px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+#header {
+	height: 86px;
+	margin: 0 auto;
+	position: relative; 
+	width: 960px;
+}
+
+#logo {
+	background-image:url(../Images/HDR-LOGO.png);
+	background-position: initial initial;
+	background-repeat: no-repeat no-repeat;
+	height: 95px;
+	left: 400px;
+	position: absolute;
+	width: 150px;
+	margin-top: 15px;	
+}
+
+#header #nav {
+	font-size: 20px;
+	list-style: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+#header #nav li {
+	display: inline;
+}
+
+#nav #about-link {
+	margin-right: 50px;
+}
+
+#nav #lab-link {
+	margin-right: 150px;
+}
+
+#nav #contact-link {
+	margin-left: 150px;	
+}
+
+#nav #blog-link {
+	margin-left: 50px;	
+}
+
+#header #nav li a {
+	color: #FFF;
+	line-height: 80px;
+	text-decoration:none;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+#nav li a:hover {
+	background-color: #292727;
+	height: 77px;
+	display:inline-block;
+	text-decoration:none;
+}
+
+#page_wrap {
+	width: 960px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+#intro {
+	padding-top: 150px;
+}
+
+.section {
+	margin-bottom: 50px;
+}
+
+#subsec {
+  clear:both;
+}
+
+.clearfix {
+	display:block;
+}
+
+#subsec .right {
+  float:right;
+  width:540px;
+}
+
+#skills {
+  list-style:none;
+}
+
+#skills li {
+  background-image:url(../Images/check.png);
+  background-position:0 30%;
+  background-repeat:no-repeat no-repeat;
+  float:right;
+  font-size:18px;
+  padding:0 0 0 30px;
+  width:300px;
+  color: #FFF;
+}
+
+#lab ul {
+  list-style:none;
+}
+
+#lab li {
+  background-image:url(../Images/BKG-folio.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  float:left;
+  height:179px;
+  margin:10px 4px;
+  width:232px;
+}
+
+#lab li a {
+  outline:none;
+}
+
+#lab li a img {
+  border:none;
+  height:146px;
+  padding:12px 19px;
+  width:192px;
+}
+
+a img {
+  border:none;
+  outline:none;
+}
+
+#contact {
+	font-size:18px;
+	color: #FFF;
+}
+
+#contact h2 {
+  background-image:url(../Images/HDR-sayhello.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+}
+
+#contact .left {
+  float:left;
+  width:500px;
+}
+
+#contact .right {
+  float:right;
+  width:300px;
+}
+
+#contact .right ul {
+  list-style:none;  
+}
+
+#contact .right ul li {
+  font-size:18px;
+  padding:0 0 0 10px;
+  width:150px;
+  text-decoration: none;
+}
+
+#contact .right ul li a {
+	color: #FFF;
+	text-decoration:none; 
+}
+
+#contact .right ul li a:hover{
+	color: #a09678; 
+}
+
+#contact .right a {
+	color: #FFF; 
+}
+
+#contact .right a:hover{
+	color: #a09678; 
+}
+
+.textfield {
+	background: url(../Images/BKG-formtext.png);
+	background-repeat: no-repeat no-repeat;
+	width: 305px;
+	height: 30px;
+	border: none;
+	margin-bottom: 25px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	font-family: 'Varela Round', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 5 5 5 5;	
+}
+
+.msgtextfield {
+	background: url(../Images/BKG-msgformtext.png);
+	background-repeat: no-repeat no-repeat;
+	width: 305px;
+	height: 115px;
+	border: none;
+	margin-bottom: 25px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	font-family: 'Varela Round', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 5 5 5 5;	
+}
+
+.btn-submit {
+	background: url(../Images/btn-send.png);
+	width: 142px;
+	height: 42px;
+	border: none;
+	margin-bottom: 200px;
+	background-repeat:no-repeat;
+}
+
+#hello {
+  background-image:url(../Images/HELLO-BANNER.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  height:585px;
+  margin:0 auto;
+  width:931px;
+}
+
+#about h2 {
+	background-image:url(../Images/HDR-aboutme.png);
+	background-position:initial initial;
+    background-repeat:no-repeat no-repeat;
+}
+
+#about h2, #lab h2 {
+  height:105px;
+  margin-top: 300px; 
+  margin-bottom: 100px;
+  text-indent: -7000px;
+  width: 960px;
+}
+
+#contact h2 {
+  height: 105px;
+  margin-top: 1300px; 
+  margin-bottom: 50px;
+  text-indent: -7000px;
+  width: 960px;
+}
+
+#lab h2 {
+  background-image:url(../Images/HDR-lab.png);
+  background-position: initial initial;
+  background-repeat:no-repeat no-repeat;
+}
+
+.headshot {
+	float:left;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 0;
+	padding-bottom: 100px;
+}
+
+p {
+	margin-bottom: 1.5em;
+	color: #FFF;
+}
+
+.signature {
+	margin-left: 300px;
+}
+
+h3 {
+  margin-left: 300px;
+  margin-top: 70px;
+  font-size:30px;
+  font-weight:normal;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  color: #a09678;
+}
+
+#contact .right h3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-size:30px;
+  font-weight:normal;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  color: #a09678;
+}
+
+#contact .left h3 {
+  margin-left: 30px;
+  margin-right: auto;
+  margin-top: 20px;
+  font-size:30px;
+  font-weight:normal;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+  color: #a09678;
+}
+
+#footer-wrap {
+  background-image: url(../Images/BKG-1.gif);
+  background-repeat: repeat;
+  background-position:initial initial; 
+  clear: both;
+}
+
+#footer {
+  height:285px;
+  margin:0 auto;
+  position:relative;
+  width:960px;
+}
+
+#footer-logo {
+  background-image:url(../Images/FTR-LOGO.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  height:300px;
+  left:315px;
+  position:absolute;
+  top:-70px;
+  width:365px;
+}
+
+#footer-logo .totop {
+  margin-top:280px;
+  margin-left:120px;
+}
+
+#footer-logo a {
+  background-image:url(../Images/totop-icon.png);
+  background-position:initial initial;
+  background-repeat:no-repeat;
+  display:block;
+  height:53px;
+  width:53px;
+}
+
+#stephcvbox {
+  background-image:url(../Images/steph-cvbox.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  height:180px;
+  color: #FFF;
+  left:0;
+  position:absolute;
+  top:15px;
+  width:290px;
+}
+
+#stephcvbox .cvtext {
+  list-style:none;
+  padding:15px;
+  margin-top: 125px;
+  line-height:1.5px;
+  color:#FFF;
+  text-decoration:none;
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+}
+
+#stephcvbox li a {
+  display:inline;
+  color: #FFF;
+  outline:none;
+  text-decoration:none;
+  margin-top: 125px;
+}
+
+#stephcvbox li a:hover {
+	color:#a09678;	
+}
+
+#copyright-box {
+  background-image:url(../Images/copyright-box.png);
+  background-position:initial initial;
+  background-repeat:no-repeat no-repeat;
+  height:71px;
+  left:0;
+  position:absolute;
+  top:205px;
+  width:348px;
+}
+
+.flickr_badge_image {
+	margin:0px;
+	display:inline;
+}
+
+.flickr_badge_image img {
+	border: 5px solid #333 !important; 
+	padding:5px; 
+	margin:3px;
+}
+
+#flickr_badge_wrapper {
+	background-image:url(../Images/BKG-flickrbox.png);
+	background-repeat:no-repeat;
+	text-align:center;
+	font-weight:bold;
+	padding:5px;
+	position:absolute;
+    right:0;
+    top:40px;
+    width:410px;
+	height:230px;
+}
