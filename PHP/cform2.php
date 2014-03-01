@@ -3,7 +3,7 @@
 
 <?php
 
-    $to = "steph@stephkahle.tk";
+    $to = "steph.hkahle@gmail.com";
 
     $name = $_POST['sender_name'];
     $email = $_POST['sender_email'];
