@@ -115,7 +115,7 @@ body {
 }
 
 #nav li a:hover {
-	background-color: #292727;
+	background-color: #000;
 	height: 77px;
 	display:inline-block;
 	text-decoration:none;
